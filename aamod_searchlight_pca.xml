@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aap>
+    <tasklist>
+        <currenttask domain='subject' desc='Searchlight PCA' modality='MRI'>
+            <name>
+                myvois
+            </name>
+            <numberofcomponents>
+                20
+            </numberofcomponents>
+            
+            <inputstreams>
+﻿                <stream>epi</stream>
+            </inputstreams>
+            
+            <outputstreams>
+﻿                <stream>searchlightpca</stream>
+            </outputstreams>
+        </currenttask>
+    </tasklist>
+</aap>
+

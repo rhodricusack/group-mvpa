@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aap>
+    <tasklist>
+        <currenttask domain='study' desc='Searchlight PCA MVPA' modality='MRI'>
+            <method>pca</method>
+            <inputstreams>
+﻿                <stream>searchlightpca</stream>
+            </inputstreams>
+            
+            <outputstreams>
+﻿                <stream>pcmvpa_groupspace</stream>
+            </outputstreams>
+        </currenttask>
+    </tasklist>
+</aap>
+

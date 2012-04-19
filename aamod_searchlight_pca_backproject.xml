@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aap>
+    <tasklist>
+        <currenttask domain='subject' desc='Searchlight PCA MVPA back-project' modality='MRI'>
+            <method>pca</method>
+            <inputstreams>
+﻿                <stream>pcmvpa_groupspace</stream>
+﻿﻿                <stream>searchlightpca</stream>
+            </inputstreams>
+            
+            <outputstreams>
+﻿                <stream>pcmvpa_stats</stream>
+﻿                <stream>pcmvpa_backproj</stream>
+            </outputstreams>
+        </currenttask>
+    </tasklist>
+</aap>
+
