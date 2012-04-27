@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aap>
+    <tasklist>
+        <initialisation>
+            <module><name>aamod_checkparameters</name></module>
+            <!-- <module><name>aamod_evaluatesubjectnames</name></module> -->
+            <!--            <module><name>aamod_make_subjects_short</name></module> -->
+            <module><name>aamod_study_init</name></module>
+            <module><name>aamod_newsubj_init</name></module>
+        </initialisation>
+        <main>
+            
+            <module>
+                <name>aamod_highpassfilter_epi</name>
+                <remotestream>
+                    <stream>epi</stream>
+                    <host>cbu</host>
+                    <aapfilename>/imaging/camcan/cc700-mri/aap_parameters.mat</aapfilename>
+                    <stagetag>aamod_norm_write_00001</stagetag>
+                    <sourcedomain>subject</sourcedomain>
+                </remotestream>
+                <remotestream>
+                    <stream>epi_header</stream>
+                    <host>cbu</host>
+                    <aapfilename>/imaging/camcan/cc700-mri/aap_parameters.mat</aapfilename>
+                    <stagetag>aamod_convert_epis_00001</stagetag>
+                    <sourcedomain>study</sourcedomain>
+                </remotestream>
+            </module>
+<!--            <module>
+                <name>aamod_vois_extract</name>
+            </module>
+            <module>
+                <name>aamod_voi_combine</name>
+            </module>
+            <module>
+                <name>aamod_voi_pca_mvpa</name>
+            </module>
+            <module>
+                <name>aamod_voi_pca_mvpa</name>
+                <extraparameters>
+                    <aap><tasklist><currenttask><settings><method>
+                                        ica
+                    </method></settings></currenttask></tasklist></aap>
+                </extraparameters>
+            </module>
+            -->
+            <module>
+                <name>aamod_searchlight_pca</name>
+            </module>
+            <module>
+                <name>aamod_searchlight_pca_mvpa</name>
+            </module>
+            <module>
+                <name>aamod_searchlight_pca_backproject</name>
+            </module>
+        </main>
+    </tasklist>
+</aap>
